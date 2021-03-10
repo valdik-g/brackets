@@ -1,20 +1,19 @@
 module.exports = function check(str, bracketsConfig) {
     let arr = str.split("");
     let t = 0;
-    let k1,k2,k3,k4,k5,k6,k7,k8,k9,k10,k11,k12;
+    let k1,k2,k3,k4,k5,k6,k7,k8,k9,k10,k12;
     let r = arr.join("");
     for(let i = 0;i<10000;i++) {
         k1 = arr.join("").indexOf("[]",0);
         k2 = arr.join("").indexOf("{}",0);
         k3 = arr.join("").indexOf("()",0);
         k4 = arr.join("").indexOf("||",0);
-        k5 = arr.join("").indexOf("11",0);
-        k6 = arr.join("").indexOf("22",0);
-        k7 = arr.join("").indexOf("33",0);
-        k8 = arr.join("").indexOf("44",0);
-        k9 = arr.join("").indexOf("55",0);
-        k10 = arr.join("").indexOf("66",0);
-        k11 = arr.join("").indexOf("77",0);
+        k5 = arr.join("").indexOf("12",0);
+        k6 = arr.join("").indexOf("23",0);
+        k7 = arr.join("").indexOf("34",0);
+        k8 = arr.join("").indexOf("45",0);
+        k9 = arr.join("").indexOf("56",0);
+        k10 = arr.join("").indexOf("77",0);
         k12 = arr.join("").indexOf("88",0);
         let r1 = arr.join("");
         if (k1 !== -1) {
@@ -64,11 +63,6 @@ module.exports = function check(str, bracketsConfig) {
         }
         if (k10 !== -1) {
             arr.splice(k10,2);
-            t++;
-            continue;
-        }
-        if (k11 !== -1) {
-            arr.splice(k11,2);
             t++;
             continue;
         }
