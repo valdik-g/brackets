@@ -31,11 +31,11 @@ module.exports = function check(str, bracketsConfig) {
         }
         if(r1.length === 0)
         {
-            console.log(true);
+            return true;
             break;
         }
         if(t === 0) {
-            console.log(false);
+            return false;
             break;
         }
         t = 0;
